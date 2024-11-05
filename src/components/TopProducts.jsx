@@ -9,7 +9,7 @@ const TopProducts = () => {
 
   // Fetching data from API
   useEffect(() => {
-    const fetchData = async () => {
+    const productData = async () => {
         try{
             const res = await axios.get('https://fakestoreapi.com/products')
             setTopProducts(res.data.slice(0,8))
@@ -17,7 +17,7 @@ const TopProducts = () => {
             console.error("Items Not Found", error)
         }
     }
-    fetchData()
+    productData()
     },[])
 
   return (
@@ -34,7 +34,7 @@ const TopProducts = () => {
       </div>
 
       {/* Top Products On the Home Page */}
-      <div className='grid grid-cols-1 sm:gird-cols-2 md:gird-cols-3 lg:grid-cols-4 gap-4 sm:gap-8'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-8'>
       {topproducts.map((showTopProduct) => (
         <div key={showTopProduct.id} className='overflow-hidden rounded-lg shadow sm:hover:scale-110 duration-500 transition ease-in-out'>
           <Link to={`/product/${showTopProduct.id}`} className='w-full h-40 sm:mb-5 px-2 rounded-lg'>
