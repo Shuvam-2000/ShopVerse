@@ -1,4 +1,4 @@
-const testimonials = [
+const Testimonial = [
     {
         name: "Amit Sharma",
         location: "Delhi, India",
@@ -61,4 +61,4 @@ const testimonials = [
     }
 ];
 
-export default testimonials;
+export default Testimonial;
