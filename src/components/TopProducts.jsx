@@ -36,7 +36,7 @@ const TopProducts = () => {
       {/* Top Products On the Home Page */}
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-8'>
       {topproducts.map((showTopProduct) => (
-        <div key={showTopProduct.id} className='overflow-hidden rounded-lg shadow sm:hover:scale-110 duration-500 transition ease-in-out'>
+        <div key={showTopProduct.id} className='overflow-hidden rounded-lg shadow-lg sm:hover:shadow-2xl transition-all duration-300 hover:bg-gray-100 '>
           <Link to={`/product/${showTopProduct.id}`} className='w-full h-40 sm:mb-5 px-2 rounded-lg'>
           <img src={showTopProduct.image} alt={showTopProduct.title} className="sm:w-full w-[90%] h-40 sm:mb-5 px-2 rounded-lg" />
           <p className="sm:text-sm text-xs font-serif mt-2 ml-2 sm:font-mono text-[#414141]">{showTopProduct.title}</p>
