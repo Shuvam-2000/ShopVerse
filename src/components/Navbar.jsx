@@ -14,7 +14,7 @@ const Navbar = () => {
     <div className="flex items-center justify-between py-5 font-medium border-b">
       <Link to="/">
         <h1 className="sm:text-3xl text-2xl">
-          Shops<span className="text-[#f21c1c]">Verse</span>
+          Shop<span className="text-[#f21c1c]">Verse</span>
         </h1>
       </Link>
 
@@ -70,11 +70,11 @@ const Navbar = () => {
             <img src={cross_icon} alt="close-icon" className="h-4 rotate-180" />
             <p>Close</p>
           </div>
-          <NavLink className="py-2 pl-6 border" to="/" onClick={() => setMenuVisible(false)}>HOME</NavLink>
-          <NavLink className="py-2 pl-6 border" to="/exploreproducts" onClick={() => setMenuVisible(false)}>EXPLORE PRODUCTS</NavLink>
-          <NavLink className="py-2 pl-6 border" to="/aboutus" onClick={() => setMenuVisible(false)}>KNOW US</NavLink>
-          <NavLink className="py-2 pl-6 border-b" to="/contact" onClick={() => setMenuVisible(false)}>CONTACT US</NavLink>
-          <NavLink className="py-2 pl-6 border-b" to="/login" onClick={() => setMenuVisible(false)}>LOGIN/SIGN UP</NavLink>
+          <NavLink className="py-2 pl-6 text-center" to="/" onClick={() => setMenuVisible(false)}>HOME</NavLink>
+          <NavLink className="py-2 pl-6 text-center" to="/exploreproducts" onClick={() => setMenuVisible(false)}>EXPLORE PRODUCTS</NavLink>
+          <NavLink className="py-2 pl-6 text-center" to="/aboutus" onClick={() => setMenuVisible(false)}>KNOW US</NavLink>
+          <NavLink className="py-2 pl-6 text-center" to="/contact" onClick={() => setMenuVisible(false)}>CONTACT US</NavLink>
+          <NavLink className="py-2 pl-6 text-center" to="/login" onClick={() => setMenuVisible(false)}>LOGIN/SIGN UP</NavLink>
         </div>
       </div>
     </div>
