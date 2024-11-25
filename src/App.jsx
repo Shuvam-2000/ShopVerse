@@ -12,6 +12,8 @@ import PlaceOrder from './pages/PlaceOrder';
 import OurPolicies from './components/OurPolicies';
 import ScrollOnTop from './components/ScrollOnTop';
 import SearchBar from './components/SearchBar';
+import SignUp from './pages/SignUp';
+import ForgotPassoword from './pages/ForgotPassoword';
 import './index.css';
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
               <Route path="/exploreproducts" element={<ExploreProducts />} />
               <Route path="/aboutus" element={<AboutUs />} />
               <Route path="/login" element={<SignIn />} />
+              <Route path="/signup" element={<SignUp />} />
+              <Route path="/forgotpassowrd" element={<ForgotPassoword />} />
               <Route path="/cart" element={<Cart />} />
               <Route path="/product/:productId" element={<Products />} />
               <Route path="/placeorder" element={<PlaceOrder />} />
