@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom"
 
-const SignUp = () => {
+const SignUp = ({regsiter,  handleSubmit, errors, onSubmit, isSubmitting}) => {
 
-    const navigate = useNavigate()
+  const navigate = useNavigate()
 
   return (
     <form className="flex flex-col items-center w-[90%] sm:max-w-96 m-auto mt-14 gap-4 text-gray-700 border border-gray-300 rounded-lg shadow-lg p-6">
