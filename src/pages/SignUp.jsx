@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom"
 
-const SignUp = ({regsiter,  handleSubmit, errors, onSubmit, isSubmitting}) => {
+const SignUp = () => {
 
   const navigate = useNavigate()
 
