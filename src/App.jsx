@@ -1,5 +1,4 @@
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
-import { useForm } from 'react-hook-form'
 import Navbar from './components/Navbar';
 import ContactUs from './pages/ContactUs';
 import Home from './pages/Home';
@@ -18,16 +17,6 @@ import ForgotPassoword from './pages/ForgotPassoword';
 import './index.css';
 
 function App() {
-  const {
-    register,
-    // setValue,
-    handleSubmit,
-    formState: { errors, isSubmitting },
-  } = useForm();
-
-  const onSubmit = (data) => {
-    console.log("Form Submitted", data)
-  }
 
   return (
       <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[4vw]'>
@@ -39,20 +28,8 @@ function App() {
               <Route path="/contact" element={<ContactUs />} />
               <Route path="/exploreproducts" element={<ExploreProducts />} />
               <Route path="/aboutus" element={<AboutUs />} />
-              <Route 
-                path="/login" 
-                register={register} 
-                handleSubmit={handleSubmit} 
-                errors={errors} 
-                onSubmit={onSubmit} 
-                isSubmitting={isSubmitting}  element={<SignIn />} />
-
-              <Route path="/signup" 
-                register={register} 
-                handleSubmit={handleSubmit} 
-                errors={errors} onSubmit={onSubmit} 
-                isSubmitting={isSubmitting}  element={<SignUp />} />
-                
+              <Route path="/login"  element={<SignIn />} />
+              <Route path="/signup" element={<SignUp />} />
               <Route path="/forgotpassowrd" element={<ForgotPassoword />} />
               <Route path="/cart" element={<Cart />} />
               <Route path="/product/:productId" element={<Products />} />
