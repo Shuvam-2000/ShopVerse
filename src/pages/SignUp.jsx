@@ -44,6 +44,8 @@ const SignUp = () => {
       {errors.username && (
         <p className="text-xs justify-start m-30 mt-1 text-red-500">{errors.username.message}</p>
       )}
+
+      {/* Email Validation */}
       <input
         type="text"
         className={`w-full px-3 sm:py-2 text-xs py-1 border hover:border-black rounded-lg mt-2 ${errors.email ? "border-red-500": "border-gray-400"}`}
@@ -59,6 +61,8 @@ const SignUp = () => {
       {errors.email && (
         <p className="text-xs justify-start m-30 mt-1 text-red-500">{errors.email.message}</p>
       )}
+
+      {/* Password Validation */}
       <input
         type="text"
         className={`w-full px-3 sm:py-2 py-1 text-xs border hover:border-black rounded-lg mt-2 ${errors.password ? "border-red-500" : "border-gray-400"}`}
@@ -76,6 +80,8 @@ const SignUp = () => {
       {errors.password && (
         <p className="text-xs justify-start mt-2 mb-1 text-red-500">{errors.password.message}</p>
       )}
+
+      {/* Confirm Password Validations */}
       <input
         type="text"
         className={`w-full px-3 sm:py-2 py-1 text-xs border hover:border-black rounded-lg mt-2 ${errors.confirmPassword ? "border-red-500" : "border-gray-400"}`}
